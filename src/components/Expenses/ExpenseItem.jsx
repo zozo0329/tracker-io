@@ -9,6 +9,7 @@ function ExpenseItem(props) {
   const statusHandler = () => {
     setStatus("Paid ✔");
   };
+
   return (
     <Card>
       <div onClick={statusHandler} className="expense-container">
@@ -16,7 +17,7 @@ function ExpenseItem(props) {
         <h1>{status}</h1>
         <div className="item">
           <h2>{props.title}</h2>
-          <p>${props.amount}</p>
+          <p>₱ {props.amount}</p>
         </div>
       </div>
     </Card>

@@ -1,6 +1,6 @@
 import "./Form.css";
 import { useState } from "react";
-const Form = () => {
+const Form = (props) => {
   const [title, setTitle] = useState("");
   const [amount, setAmount] = useState("");
   const [date, setDate] = useState("");
@@ -25,7 +25,7 @@ const Form = () => {
       amount: amount,
       date: new Date(date),
     };
-    console.log(expenseData);
+    props.addHandler(expenseData);
     setTitle("");
     setAmount("");
     setDate("");
@@ -39,6 +39,7 @@ const Form = () => {
             onChange={titleChangeHandler}
             type="text"
             placeholder="Title"
+            required
           />
         </div>
         <div className="input-form">
@@ -49,10 +50,11 @@ const Form = () => {
             placeholder="Amount"
             min="0.01"
             step="0.01"
+            required
           />
         </div>
         <div className="input-form">
-          <input value={date} onChange={dateHandler} type="date" />
+          <input value={date} onChange={dateHandler} type="date" required />
         </div>
         <div className="btn">
           <button type="submit">Add</button>
