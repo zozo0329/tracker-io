@@ -1,0 +1,12 @@
+.display-date {
+  cursor: context-menu;
+  transition: all 0.7s;
+  border-radius: 10px;
+  text-align: center;
+  width: 150px;
+  padding: 10px;
+  border: 1px solid lime;
+}
+.display-date:hover {
+  transform: scale(1.1);
+}

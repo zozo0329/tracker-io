@@ -1,0 +1,23 @@
+.form-section {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 50px;
+  margin: 50px 200px 50px 200px;
+  border-top: 2px solid lime;
+  border-bottom: 2px solid lime;
+}
+h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: lime;
+  font-family: Silkscreen, sans-serif;
+  font-weight: normal;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0px 200px 0px 200px;
+}

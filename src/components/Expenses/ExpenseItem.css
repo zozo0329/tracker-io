@@ -1,0 +1,35 @@
+.expense-container {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  color: lime;
+  font-family: Silkscreen, sans-serif;
+  border-top: 2px solid lime;
+  border-bottom: 2px solid lime;
+  transition: all 0.8s;
+  cursor: pointer;
+}
+.expense-container:hover {
+  background-color: #001f00;
+}
+.expense-container h1 {
+  font-size: 20px;
+  font-weight: normal;
+}
+.item h2 {
+  width: 160px;
+  margin-bottom: 5px;
+  cursor: context-menu;
+  font-size: 15px;
+}
+.item p {
+  margin-top: 0px;
+  font-weight: bold;
+  transition: 0.8s all;
+  cursor: context-menu;
+}
+.item p:hover {
+  transform: scale(1.3);
+}
